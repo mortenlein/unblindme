@@ -1,0 +1,60 @@
+﻿<Window x:Class="UnBlindMe.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:UnBlindMe"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800" WindowStyle="None" Foreground="{x:Null}" Background="#66000000" AllowsTransparency="True" MouseDown="Window_MouseDown" Icon="/headlight.png">
+    <WindowChrome.WindowChrome>
+        <WindowChrome 
+        CaptionHeight="0"
+        ResizeBorderThickness="5" />
+    </WindowChrome.WindowChrome>
+    <Window.Resources>
+        <ResourceDictionary>
+            <RoutedUICommand x:Key="Ctr1" Text="Another Text" />
+            <RoutedUICommand x:Key="Ctr2" Text="Another Text" />
+            <RoutedUICommand x:Key="Ctr3" Text="Another Text" />
+            <RoutedUICommand x:Key="Ctr4" Text="Another Text" />
+            <RoutedUICommand x:Key="Ctr5" Text="Another Text" />
+            <RoutedUICommand x:Key="Ctr6" Text="Another Text" />
+            <RoutedUICommand x:Key="Ctr7" Text="Another Text" />
+            <RoutedUICommand x:Key="Ctr8" Text="Another Text" />
+            <RoutedUICommand x:Key="Ctr9" Text="Another Text" />
+            <RoutedUICommand x:Key="Ctr0" Text="Another Text" />
+            <RoutedUICommand x:Key="CtrA" Text="Another Text" />
+        </ResourceDictionary>
+    </Window.Resources>
+
+    <Window.InputBindings>
+        <KeyBinding Key="D1" Modifiers="Ctrl" Command="{StaticResource Ctr1}" />
+        <KeyBinding Key="D2" Modifiers="Ctrl" Command="{StaticResource Ctr2}" />
+        <KeyBinding Key="D3" Modifiers="Ctrl" Command="{StaticResource Ctr3}" />
+        <KeyBinding Key="D4" Modifiers="Ctrl" Command="{StaticResource Ctr4}" />
+        <KeyBinding Key="D5" Modifiers="Ctrl" Command="{StaticResource Ctr5}" />
+        <KeyBinding Key="D6" Modifiers="Ctrl" Command="{StaticResource Ctr6}" />
+        <KeyBinding Key="D7" Modifiers="Ctrl" Command="{StaticResource Ctr7}" />
+        <KeyBinding Key="D8" Modifiers="Ctrl" Command="{StaticResource Ctr8}" />
+        <KeyBinding Key="D9" Modifiers="Ctrl" Command="{StaticResource Ctr9}" />
+        <KeyBinding Key="D0" Modifiers="Ctrl" Command="{StaticResource Ctr0}" />
+        <KeyBinding Key="A" Modifiers="Ctrl" Command="{StaticResource CtrA}" />
+    </Window.InputBindings>
+
+    <Window.CommandBindings>
+        <CommandBinding Command="{StaticResource Ctr1}" Executed="CtrShortcut1" />
+        <CommandBinding Command="{StaticResource Ctr2}" Executed="CtrShortcut2" />
+        <CommandBinding Command="{StaticResource Ctr3}" Executed="CtrShortcut3" />
+        <CommandBinding Command="{StaticResource Ctr4}" Executed="CtrShortcut4" />
+        <CommandBinding Command="{StaticResource Ctr5}" Executed="CtrShortcut5" />
+        <CommandBinding Command="{StaticResource Ctr6}" Executed="CtrShortcut6" />
+        <CommandBinding Command="{StaticResource Ctr7}" Executed="CtrShortcut7" />
+        <CommandBinding Command="{StaticResource Ctr8}" Executed="CtrShortcut8" />
+        <CommandBinding Command="{StaticResource Ctr9}" Executed="CtrShortcut9" />
+        <CommandBinding Command="{StaticResource Ctr0}" Executed="CtrShortcut0" />
+        <CommandBinding Command="{StaticResource CtrA}" Executed="CtrShortcutA" />
+    </Window.CommandBindings>
+
+
+    <Grid Width="796" Margin="1,1,1,1" Height="444" MouseDown="Grid_MouseDown"/>
+</Window>
